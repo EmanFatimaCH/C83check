@@ -37,8 +37,8 @@ document.body.style.overflow = "hidden";
     
     {
         console.log("my_touchMove")
-         current_position_of_touch_x = e.clientX - canvas.offsetLeft;
-         current_position_of_touch_y = e.clientY - canvas.offsetTop;
+         current_position_of_touch_x = e.touches[0].clientX - canvas.offsetLeft;
+         current_position_of_touch_y = e.touches[0].clientY - canvas.offsetTop;
 
         ctx.beginPath();
         ctx.strokeStyle = color;
